@@ -20,7 +20,7 @@ const ContactForm = () => {
         (result) => {
           console.log(result.text);
           form.current.reset();
-          formMess.innerHTML = "<p class='success'>Message envoyé !</p>";
+          formMess.innerHTML = "<p className='success'>Message envoyé !</p>";
 
           setTimeout(() => {
             formMess.innerHTML = "";
@@ -29,7 +29,7 @@ const ContactForm = () => {
         (error) => {
           console.log(error.text);
           formMess.innerHTML =
-            "<p class='error'>Une erreur s'est produite, veuillez rééssayez</p>";
+            "<p className='error'>Une erreur s'est produite, veuillez rééssayez</p>";
 
           setTimeout(() => {
             formMess.innerHTML = "";
